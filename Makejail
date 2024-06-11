@@ -1,0 +1,9 @@
+SYSRC syslogd_flags=-ss
+SYSRC sendmail_enable=NO
+SYSRC sendmail_submit_enable=NO
+SYSRC sendmail_outbound_enable=NO
+SYSRC sendmail_msp_queue_enable=NO
+SYSRC "cron_flags=-J 60"
+
+SERVICE syslogd restart
+SERVICE cron restart
